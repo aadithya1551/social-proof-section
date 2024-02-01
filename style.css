@@ -1,0 +1,149 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: "league spartan", sans-serif;
+   font-size: 15px;
+}
+
+.container {
+   padding: 100px;
+   background-image: url("images/bg-pattern-top-desktop.svg");
+   background-repeat: no-repeat;
+}
+
+.content2 {
+   margin-top: 20px;
+}
+
+.one h1 {
+   font-weight: bolder;
+   color: hsl(300, 43%, 22%);
+   font-size: 45px;
+}
+
+
+.two section {
+   padding: 10px;
+   padding-left: 35px;
+   padding-right: 35px;
+   margin-top: 15px;
+   font-size: 14px;
+   text-align: center;
+   display: inline-block;
+   background-color: aquamarine;
+   color: hsl(300, 43%, 22%);
+   background-color: hsl(300, 24%, 96%);
+   font-weight: bold;
+   border-radius: 10px;
+}
+
+section img {
+   margin-top: -5px;
+   width: 17px;
+   height: 16px;
+}
+
+section p {
+   font-size: 15px;
+   display: inline;
+   margin-left: 10px;
+}
+
+
+img {
+   height: 40px;
+   width: 40px;
+   border-radius: 50px;
+   display: inline-block;
+}
+
+.pro {
+   font-weight: bold;
+   margin: 0px;
+   padding: 0px;
+   display: inline;
+   position: relative;
+   left: 60px;
+   top: -40px;
+}
+
+.pro span {
+   color: hsl(333, 80%, 67%);
+
+}
+
+.pro h4 {
+   margin-bottom: -5px;
+}
+
+.profile {
+   background-color: hsl(300, 43%, 22%);
+   color: white;
+   width: 400px;
+   padding: 20px;
+   border-radius: 10px;
+   position: relative;
+}
+
+.profile p {
+   margin-top: -20px;
+   font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+
+   .container{
+      padding: 100px;
+      background-image: url("images/bg-pattern-top-desktop.svg");
+      background-repeat: no-repeat;
+   }
+
+   .content1{
+      display: grid;
+      grid-template-columns: 350px;
+      grid-template-rows: auto auto;
+      justify-content: center;
+      text-align: center;
+      
+   }
+
+   .one{
+      grid-column: 1 / 2;
+      grid-row: 1 / 1;
+   }
+
+   .two{
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
+      margin:  0px;
+      padding: 0px;
+               
+   }
+
+   .two section{
+      width: 350px;
+      display: block;
+   }
+
+   .two p{
+      display: block;
+      margin-bottom: 5px;
+   }
+
+   .content2{
+      display: grid;
+      grid-template-columns: 400px;
+      grid-template-rows: auto auto auto;
+      justify-content: center;
+      margin-top: 40px;
+      row-gap: 10px;
+      background-image: url("images/bg-pattern-bottom-mobile.svg");
+   }
+
+   .profile{
+      width: 350px;
+      padding: 30px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
